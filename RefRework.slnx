@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="RefReworkClient\RefReworkClient.csproj" />
+  <Project Path="RefReworkServer\RefReworkServer.csproj" />
+</Solution>

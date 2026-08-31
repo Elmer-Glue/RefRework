@@ -1,0 +1,21 @@
+{
+    "enable": true,
+
+    "refBuysInGPCoins": true,
+
+    "refOnlyBuysDogtags": true,
+
+    "refAlsoBuysLegaMedals": true,
+
+    "blockDogtagSalesToOtherTraders": true,
+
+    "blockLegaMedalSalesToOtherTraders": true,
+
+    "gpCoinRoubleValue": 2500,
+
+    "legaMedalGpCoinRoubleValue": 9000,
+
+    "dev": {
+        "showFullError": false
+    }
+}

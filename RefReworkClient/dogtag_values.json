@@ -1,0 +1,16 @@
+{
+  "_comment": "GP coins Ref pays for a dogtag of the given level (kills). Levels not listed use the value of the nearest lower listed level. Add/remove/edit levels freely -- no restart needed, the table hot-reloads.",
+  "fallbackAmount": 1,
+  "levels": {
+    "1": 1,
+    "8": 2,
+    "15": 3,
+    "22": 4,
+    "29": 5,
+    "36": 6,
+    "43": 7,
+    "50": 8,
+    "57": 9,
+    "64": 10
+  }
+}
