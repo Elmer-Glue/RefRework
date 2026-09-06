@@ -58,20 +58,17 @@ public class PostDBLoader(
 
         context.PostInitialize(tradersTable, templateTable);
 
-        if (context.config.enable)
+        try
         {
-            try
+            RefChanges.Apply(context);
+            logger.Success("Ref Rework: applied Ref dogtag/Lega medal -> GP coin changes.");
+        }
+        catch (Exception ex)
+        {
+            logger.Error($"Ref Rework failed to apply changes: {ex.Message}");
+            if (context.config.dev.showFullError)
             {
-                RefChanges.Apply(context);
-                logger.Success("Ref Rework: applied Ref dogtag/Lega medal -> GP coin changes.");
-            }
-            catch (Exception ex)
-            {
-                logger.Error($"Ref Rework failed to apply changes: {ex.Message}");
-                if (context.config.dev.showFullError)
-                {
-                    logger.Error(ex.StackTrace ?? "");
-                }
+                logger.Error(ex.StackTrace ?? "");
             }
         }
 
